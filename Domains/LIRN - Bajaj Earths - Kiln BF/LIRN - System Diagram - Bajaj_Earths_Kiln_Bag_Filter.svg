@@ -1,0 +1,399 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 1060" font-family="Segoe UI, Arial, sans-serif" font-size="11">
+  <defs>
+    <marker id="arr" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <path d="M0,0 L7,2.5 L0,5 Z" fill="#546E7A"/>
+    </marker>
+    <marker id="arr-r" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <path d="M0,0 L7,2.5 L0,5 Z" fill="#C62828"/>
+    </marker>
+    <marker id="arr-g" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <path d="M0,0 L7,2.5 L0,5 Z" fill="#2E7D32"/>
+    </marker>
+  </defs>
+
+  <rect width="750" height="1060" fill="#FFFFFF"/>
+
+  <!-- All content rotated 90° CCW — turn page clockwise to read -->
+  <g transform="translate(0,1060) rotate(-90)">
+
+    <!-- ════════════════════════════════════════════════════════ -->
+    <!--                        HEADER                           -->
+    <!-- ════════════════════════════════════════════════════════ -->
+    <text x="28" y="20" fill="#263238" font-size="12.5" font-weight="bold" letter-spacing="0.5">Kiln–Bag Filter System Layout</text>
+    <text x="28" y="33" fill="#78909C" font-size="8">Calcium Bentonite Ore Processing &#x2002;|&#x2002; Coal Fired Rotary Kiln &#x2002;|&#x2002; 10 TPH</text>
+    <text x="1032" y="20" text-anchor="end" fill="#1565C0" font-size="11" font-weight="bold" letter-spacing="1.5">LIRN Solutions</text>
+    <line x1="930" y1="26" x2="1032" y2="26" stroke="#1565C0" stroke-width="1.2"/>
+    <text x="1032" y="35" text-anchor="end" fill="#78909C" font-size="7">Process Engineering &amp; Industrial Consulting</text>
+
+
+    <!-- ════════════════════════════════════════════════════════ -->
+    <!--               ZOOM DETAIL 1 — CP1 Z-DUCT               -->
+    <!-- ════════════════════════════════════════════════════════ -->
+    <g transform="translate(28,62)">
+      <rect width="480" height="200" rx="6" fill="#FAFBFD" stroke="#CFD8DC" stroke-width="0.8"/>
+
+      <!-- Header bar -->
+      <rect width="480" height="22" rx="6" fill="#FFEBEE"/>
+      <rect y="12" width="480" height="10" fill="#FFEBEE"/>
+      <circle cx="18" cy="11" r="9" fill="#C62828"/>
+      <text x="18" y="15" text-anchor="middle" fill="#FFFFFF" font-size="8" font-weight="bold">1</text>
+      <text x="36" y="15" fill="#C62828" font-size="8" font-weight="bold">CYCLONE OUTLET &#8594; BAG FILTER INLET</text>
+
+      <!-- Wide pipe — cyclone outlet 1200mm -->
+      <rect x="22" y="82" width="48" height="32" rx="2" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.1"/>
+      <text x="46" y="76" text-anchor="middle" fill="#E65100" font-size="7" font-weight="bold">1,200 mm</text>
+      <text x="46" y="126" text-anchor="middle" fill="#78909C" font-size="6">1.131 m&#178;</text>
+
+      <!-- Reducer taper -->
+      <polygon points="70,82 70,114 96,90 96,106" fill="#FFCDD2" stroke="#C62828" stroke-width="1"/>
+
+      <!-- CHOKE POINT 1 badge -->
+      <rect x="58" y="44" width="80" height="18" rx="3" fill="#C62828"/>
+      <text x="98" y="56" text-anchor="middle" fill="#FFFFFF" font-size="7" font-weight="bold">CHOKE POINT 1</text>
+      <text x="98" y="38" text-anchor="middle" fill="#C62828" font-size="6">75% area reduction</text>
+      <line x1="98" y1="62" x2="83" y2="82" stroke="#C62828" stroke-width="0.7" stroke-dasharray="2,2"/>
+
+      <!-- Narrow pipe section — 600mm -->
+      <rect x="96" y="90" width="28" height="16" rx="1" fill="#FFCDD2" stroke="#C62828" stroke-width="0.9"/>
+      <text x="110" y="85" text-anchor="middle" fill="#C62828" font-size="6" font-weight="bold">600 mm</text>
+      <text x="110" y="118" text-anchor="middle" fill="#C62828" font-size="5.5">0.283 m&#178;</text>
+
+      <!-- Z-duct path -->
+      <polyline points="124,98 185,98 185,140 330,140" fill="none" stroke="#FFCDD2" stroke-width="14" stroke-linejoin="round" stroke-linecap="butt"/>
+      <polyline points="124,98 185,98 185,140 330,140" fill="none" stroke="#C62828" stroke-width="1.1" stroke-linejoin="round"/>
+
+      <!-- Z-duct annotations -->
+      <text x="155" y="88" fill="#C62828" font-size="6.5" font-weight="bold">26.5 m/s</text>
+      <text x="260" y="162" text-anchor="middle" fill="#546E7A" font-size="6.5">Z-Duct: 15 m, 2&#215;90&#176; bends</text>
+
+      <!-- Pressure loss badge -->
+      <rect x="245" y="120" width="70" height="15" rx="7.5" fill="#C62828"/>
+      <text x="280" y="131" text-anchor="middle" fill="#FFFFFF" font-size="7" font-weight="bold">&#8722;90 mm WG</text>
+      <text x="280" y="178" text-anchor="middle" fill="#C62828" font-size="6.5" font-weight="bold">47% of fan capacity</text>
+
+      <!-- 4&#215;500 split -->
+      <g transform="translate(330,140)">
+        <line x1="0" y1="0" x2="20" y2="-14" stroke="#2E7D32" stroke-width="1" marker-end="url(#arr-g)"/>
+        <line x1="0" y1="0" x2="20" y2="-5" stroke="#2E7D32" stroke-width="1" marker-end="url(#arr-g)"/>
+        <line x1="0" y1="0" x2="20" y2="5" stroke="#2E7D32" stroke-width="1" marker-end="url(#arr-g)"/>
+        <line x1="0" y1="0" x2="20" y2="14" stroke="#2E7D32" stroke-width="1" marker-end="url(#arr-g)"/>
+      </g>
+      <text x="365" y="128" fill="#2E7D32" font-size="6.5" font-weight="bold">4&#215;500 mm</text>
+
+      <!-- BF inlet label -->
+      <rect x="390" y="86" width="72" height="28" rx="4" fill="#E8F5E9" stroke="#2E7D32" stroke-width="0.8"/>
+      <text x="426" y="99" text-anchor="middle" fill="#1B5E20" font-size="7" font-weight="bold">&#8594; BAG</text>
+      <text x="426" y="109" text-anchor="middle" fill="#1B5E20" font-size="7" font-weight="bold">FILTER</text>
+      <line x1="390" y1="100" x2="360" y2="130" stroke="#2E7D32" stroke-width="0.6" stroke-dasharray="2,2"/>
+    </g>
+
+
+    <!-- ════════════════════════════════════════════════════════ -->
+    <!--               ZOOM DETAIL 2 — CP2 U-DUCT               -->
+    <!-- ════════════════════════════════════════════════════════ -->
+    <g transform="translate(540,62)">
+      <rect width="492" height="200" rx="6" fill="#FAFBFD" stroke="#CFD8DC" stroke-width="0.8"/>
+
+      <!-- Header bar -->
+      <rect width="492" height="22" rx="6" fill="#FFEBEE"/>
+      <rect y="12" width="492" height="10" fill="#FFEBEE"/>
+      <circle cx="18" cy="11" r="9" fill="#C62828"/>
+      <text x="18" y="15" text-anchor="middle" fill="#FFFFFF" font-size="8" font-weight="bold">2</text>
+      <text x="36" y="15" fill="#C62828" font-size="8" font-weight="bold">BAG FILTER OUTLET &#8594; ID FAN INLET</text>
+
+      <!-- BF rectangular outlet -->
+      <rect x="22" y="76" width="48" height="40" rx="2" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.1"/>
+      <text x="46" y="70" text-anchor="middle" fill="#1B5E20" font-size="6.5" font-weight="bold">1,700&#215;350</text>
+      <text x="46" y="128" text-anchor="middle" fill="#78909C" font-size="6">0.595 m&#178;</text>
+
+      <!-- Reducer taper -->
+      <polygon points="70,76 70,116 96,88 96,104" fill="#FFCDD2" stroke="#C62828" stroke-width="1"/>
+
+      <!-- CHOKE POINT 2 badge -->
+      <rect x="58" y="44" width="80" height="18" rx="3" fill="#C62828"/>
+      <text x="98" y="56" text-anchor="middle" fill="#FFFFFF" font-size="7" font-weight="bold">CHOKE POINT 2</text>
+      <text x="98" y="38" text-anchor="middle" fill="#C62828" font-size="6">52% area reduction</text>
+      <line x1="98" y1="62" x2="83" y2="76" stroke="#C62828" stroke-width="0.7" stroke-dasharray="2,2"/>
+
+      <!-- Narrow pipe section — 600mm -->
+      <rect x="96" y="88" width="28" height="16" rx="1" fill="#FFCDD2" stroke="#C62828" stroke-width="0.9"/>
+      <text x="110" y="82" text-anchor="middle" fill="#C62828" font-size="6" font-weight="bold">600 mm</text>
+      <text x="110" y="116" text-anchor="middle" fill="#C62828" font-size="5.5">0.283 m&#178;</text>
+
+      <!-- U-duct path -->
+      <polyline points="124,96 155,96 155,150 270,150 270,96 300,96" fill="none" stroke="#FFCDD2" stroke-width="14" stroke-linejoin="round" stroke-linecap="butt"/>
+      <polyline points="124,96 155,96 155,150 270,150 270,96 300,96" fill="none" stroke="#C62828" stroke-width="1.1" stroke-linejoin="round"/>
+
+      <!-- U-duct annotations -->
+      <text x="140" y="86" fill="#C62828" font-size="6.5" font-weight="bold">26.5 m/s</text>
+      <text x="212" y="172" text-anchor="middle" fill="#546E7A" font-size="6.5">U-Duct: 9 m, 2&#215;90&#176; bends</text>
+
+      <!-- Pressure loss badge (inside the U) -->
+      <rect x="178" y="118" width="70" height="15" rx="7.5" fill="#C62828"/>
+      <text x="213" y="129" text-anchor="middle" fill="#FFFFFF" font-size="7" font-weight="bold">&#8722;80 mm WG</text>
+      <text x="213" y="186" text-anchor="middle" fill="#C62828" font-size="6.5" font-weight="bold">42% of fan capacity</text>
+
+      <!-- Wide pipe — ID fan inlet 1500mm -->
+      <rect x="300" y="76" width="48" height="40" rx="2" fill="#ECEFF1" stroke="#37474F" stroke-width="1.1"/>
+      <text x="324" y="70" text-anchor="middle" fill="#37474F" font-size="6.5" font-weight="bold">1,500 mm</text>
+      <text x="324" y="128" text-anchor="middle" fill="#78909C" font-size="6">1.767 m&#178;</text>
+
+      <!-- ID Fan label -->
+      <rect x="386" y="80" width="72" height="28" rx="4" fill="#ECEFF1" stroke="#37474F" stroke-width="0.8"/>
+      <text x="422" y="98" text-anchor="middle" fill="#37474F" font-size="7" font-weight="bold">&#8594; ID FAN</text>
+      <line x1="386" y1="94" x2="354" y2="96" stroke="#37474F" stroke-width="0.6" stroke-dasharray="2,2"/>
+    </g>
+
+
+    <!-- ════════════════════════════════════════════════════════ -->
+    <!--          DASHED CONNECTORS — ZOOM TO MAIN FLOW          -->
+    <!-- ════════════════════════════════════════════════════════ -->
+    <line x1="268" y1="262" x2="628" y2="380" stroke="#C62828" stroke-width="0.8" stroke-dasharray="4,3" opacity="0.5"/>
+    <line x1="786" y1="262" x2="810" y2="380" stroke="#C62828" stroke-width="0.8" stroke-dasharray="4,3" opacity="0.5"/>
+
+
+    <!-- ════════════════════════════════════════════════════════ -->
+    <!--                  MAIN PROCESS FLOW LINE                 -->
+    <!-- ════════════════════════════════════════════════════════ -->
+
+    <!-- ── FD FAN ── -->
+    <g transform="translate(65,388)">
+      <rect x="-24" y="-24" width="48" height="48" rx="4" fill="#ECEFF1" stroke="#37474F" stroke-width="1.4"/>
+      <circle cx="0" cy="0" r="17" fill="none" stroke="#37474F" stroke-width="1.1"/>
+      <line x1="0" y1="-17" x2="0" y2="17" stroke="#37474F" stroke-width="0.8"/>
+      <line x1="-17" y1="0" x2="17" y2="0" stroke="#37474F" stroke-width="0.8"/>
+      <line x1="-12" y1="-12" x2="12" y2="12" stroke="#37474F" stroke-width="0.6"/>
+      <line x1="12" y1="-12" x2="-12" y2="12" stroke="#37474F" stroke-width="0.6"/>
+      <text x="0" y="36" text-anchor="middle" font-weight="bold" fill="#263238" font-size="8">FD FAN</text>
+      <text x="0" y="46" text-anchor="middle" fill="#546E7A" font-size="6">38 Hz | 2,204 RPM</text>
+      <text x="0" y="55" text-anchor="middle" fill="#546E7A" font-size="6">14,227 m&#179;/h</text>
+    </g>
+
+    <!-- SFD FAN -->
+    <g transform="translate(65,318)">
+      <rect x="-14" y="-14" width="28" height="28" rx="3" fill="#ECEFF1" stroke="#37474F" stroke-width="1"/>
+      <circle cx="0" cy="0" r="9" fill="none" stroke="#37474F" stroke-width="0.8"/>
+      <text x="0" y="22" text-anchor="middle" font-weight="bold" fill="#263238" font-size="7">SFD</text>
+      <text x="0" y="31" text-anchor="middle" fill="#546E7A" font-size="6">29 Hz | 1,160 m&#179;/h</text>
+    </g>
+
+    <!-- FD+SFD merge arrow → Furnace -->
+    <line x1="89" y1="388" x2="140" y2="388" stroke="#37474F" stroke-width="2" marker-end="url(#arr)"/>
+    <line x1="79" y1="318" x2="108" y2="318" stroke="#37474F" stroke-width="1.2"/>
+    <line x1="108" y1="318" x2="108" y2="385" stroke="#37474F" stroke-width="1.2"/>
+    <rect x="92" y="374" width="40" height="10" rx="2" fill="#E3F2FD" stroke="none"/>
+    <text x="112" y="382" text-anchor="middle" fill="#1565C0" font-size="6" font-weight="bold">15,387 m&#179;/h</text>
+
+    <!-- ── FURNACE ── -->
+    <g transform="translate(178,388)">
+      <rect x="-26" y="-26" width="52" height="56" rx="3" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5"/>
+      <path d="M0,-8 C-2.5,-1 -7,3 -5,10 C-3.5,5 -1.5,2.5 0,-1 C1.5,2.5 3.5,5 5,10 C7,3 2.5,-1 0,-8Z" fill="#FF6D00" opacity="0.5"/>
+      <text x="0" y="40" text-anchor="middle" font-weight="bold" fill="#BF360C" font-size="8">FURNACE</text>
+
+      <!-- Coal feed -->
+      <line x1="0" y1="-38" x2="0" y2="-26" stroke="#424242" stroke-width="1.2" marker-end="url(#arr)"/>
+      <text x="0" y="-44" text-anchor="middle" fill="#424242" font-size="6" font-weight="bold">COAL 550 kg/hr</text>
+    </g>
+
+    <!-- BACKFIRE callout -->
+    <g transform="translate(178,316)">
+      <rect x="-30" y="-10" width="60" height="20" rx="3" fill="#FFEBEE" stroke="#C62828" stroke-width="1.2" stroke-dasharray="3,2"/>
+      <polygon points="0,-20 -5,-12 5,-12" fill="#FFEB3B" stroke="#F57F17" stroke-width="0.7"/>
+      <text x="0" y="-14" text-anchor="middle" fill="#BF360C" font-size="5" font-weight="bold">!</text>
+      <text x="0" y="1" text-anchor="middle" fill="#C62828" font-size="7" font-weight="bold">BACKFIRE</text>
+      <text x="0" y="8" text-anchor="middle" fill="#C62828" font-size="5">every 2–3 min</text>
+      <line x1="0" y1="10" x2="0" y2="16" stroke="#C62828" stroke-width="0.8" marker-end="url(#arr-r)"/>
+    </g>
+
+    <!-- Arrow: Furnace → Kiln -->
+    <line x1="204" y1="388" x2="260" y2="388" stroke="#37474F" stroke-width="2" marker-end="url(#arr)"/>
+    <rect x="212" y="370" width="36" height="10" rx="2" fill="#FFEBEE" stroke="none"/>
+    <text x="230" y="378" text-anchor="middle" fill="#C62828" font-size="7" font-weight="bold">750&#176;C</text>
+
+    <!-- ── ROTARY KILN ── -->
+    <g transform="translate(385,388)">
+      <rect x="-100" y="-18" width="200" height="36" rx="18" fill="#FBE9E7" stroke="#BF360C" stroke-width="1.5"/>
+      <line x1="-72" y1="-10" x2="-62" y2="10" stroke="#FFAB91" stroke-width="0.5"/>
+      <line x1="-40" y1="-10" x2="-30" y2="10" stroke="#FFAB91" stroke-width="0.5"/>
+      <line x1="-8" y1="-10" x2="2" y2="10" stroke="#FFAB91" stroke-width="0.5"/>
+      <line x1="24" y1="-10" x2="34" y2="10" stroke="#FFAB91" stroke-width="0.5"/>
+      <line x1="56" y1="-10" x2="66" y2="10" stroke="#FFAB91" stroke-width="0.5"/>
+      <line x1="80" y1="-10" x2="90" y2="10" stroke="#FFAB91" stroke-width="0.5"/>
+      <text x="0" y="5" text-anchor="middle" font-weight="bold" fill="#4E342E" font-size="9.5">ROTARY KILN</text>
+      <text x="0" y="28" text-anchor="middle" fill="#5D4037" font-size="6.5">2,250 mm dia &#215; 24,400 mm (80 ft)</text>
+
+      <!-- Bentonite feed -->
+      <line x1="68" y1="-30" x2="68" y2="-18" stroke="#795548" stroke-width="1.1" marker-end="url(#arr)"/>
+      <text x="68" y="-35" text-anchor="middle" fill="#795548" font-size="6.5" font-weight="bold">BENTONITE 10 TPH</text>
+    </g>
+
+    <!-- Temperature + volume labels along kiln -->
+    <text x="390" y="374" fill="#E65100" font-size="6">~500&#176;C</text>
+    <text x="455" y="374" fill="#F57F17" font-size="6">~350&#176;C</text>
+    <rect x="300" y="430" width="56" height="10" rx="2" fill="#FFEBEE" stroke="none"/>
+    <text x="328" y="438" text-anchor="middle" fill="#C62828" font-size="6">~63,000 m&#179;/h</text>
+    <rect x="430" y="430" width="52" height="10" rx="2" fill="#FFF3E0" stroke="none"/>
+    <text x="456" y="438" text-anchor="middle" fill="#E65100" font-size="6">~40,000 m&#179;/h</text>
+
+    <!-- Arrow: Kiln → Cyclone -->
+    <line x1="485" y1="388" x2="545" y2="388" stroke="#37474F" stroke-width="2" marker-end="url(#arr)"/>
+
+    <!-- ── DOUBLE CYCLONE ── -->
+    <g transform="translate(578,388)">
+      <!-- Twin cones pointing down -->
+      <rect x="-30" y="-26" width="28" height="14" rx="2" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.2"/>
+      <polygon points="-30,-12 -2,-12 -8,26 -24,26" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.2"/>
+      <rect x="2" y="-26" width="28" height="14" rx="2" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.2"/>
+      <polygon points="2,-12 30,-12 24,26 8,26" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.2"/>
+      <text x="0" y="-32" text-anchor="middle" font-weight="bold" fill="#E65100" font-size="8">DOUBLE CYCLONE</text>
+      <text x="0" y="38" text-anchor="middle" fill="#E65100" font-size="6">~200&#176;C</text>
+      <text x="0" y="47" text-anchor="middle" fill="#E65100" font-size="6">~32,000 m&#179;/h</text>
+    </g>
+
+    <!-- Arrow: Cyclone → BF  (with zoom ref ①) -->
+    <line x1="608" y1="388" x2="680" y2="388" stroke="#37474F" stroke-width="2" marker-end="url(#arr)"/>
+    <circle cx="640" cy="388" r="8" fill="#FFEBEE" stroke="#C62828" stroke-width="1"/>
+    <text x="640" y="392" text-anchor="middle" fill="#C62828" font-size="8" font-weight="bold">1</text>
+
+    <!-- ── BAG FILTER HOUSE ── -->
+    <g transform="translate(730,388)">
+      <rect x="-45" y="-20" width="90" height="40" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.5"/>
+      <polygon points="-45,20 45,20 28,36 -28,36" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.5"/>
+
+      <!-- Bag lines -->
+      <g stroke="#66BB6A" stroke-width="0.5" opacity="0.3">
+        <line x1="-36" y1="-14" x2="-36" y2="15"/>
+        <line x1="-27" y1="-14" x2="-27" y2="15"/>
+        <line x1="-18" y1="-14" x2="-18" y2="15"/>
+        <line x1="-9" y1="-14" x2="-9" y2="15"/>
+        <line x1="0" y1="-14" x2="0" y2="15"/>
+        <line x1="9" y1="-14" x2="9" y2="15"/>
+        <line x1="18" y1="-14" x2="18" y2="15"/>
+        <line x1="27" y1="-14" x2="27" y2="15"/>
+        <line x1="36" y1="-14" x2="36" y2="15"/>
+      </g>
+
+      <!-- Pulse air -->
+      <line x1="-38" y1="-20" x2="38" y2="-20" stroke="#1565C0" stroke-width="1.1"/>
+      <text x="0" y="-26" text-anchor="middle" fill="#1565C0" font-size="6">Pulse Air: 5 bar | 60 s</text>
+
+      <!-- Labels -->
+      <text x="0" y="-2" text-anchor="middle" font-weight="bold" fill="#1B5E20" font-size="8">BAG FILTER</text>
+      <text x="0" y="9" text-anchor="middle" fill="#2E7D32" font-size="6">400 bags | 502.7 m&#178;</text>
+
+      <!-- ΔP -->
+      <rect x="-38" y="-46" width="76" height="14" rx="3" fill="#FFEBEE" stroke="#C62828" stroke-width="0.8"/>
+      <text x="0" y="-36" text-anchor="middle" fill="#C62828" font-size="7" font-weight="bold">&#916;P = 20 mm WG</text>
+
+      <!-- Dust -->
+      <text x="0" y="46" text-anchor="middle" fill="#795548" font-size="5.5">Dust collection</text>
+    </g>
+
+    <!-- BF gas volume -->
+    <rect x="695" y="330" width="70" height="10" rx="2" fill="#E8F5E9" stroke="none"/>
+    <text x="730" y="338" text-anchor="middle" fill="#1B5E20" font-size="6" font-weight="bold">~135&#176;C | ~27,000 m&#179;/h</text>
+
+    <!-- Arrow: BF → ID Fan  (with zoom ref ②) -->
+    <line x1="775" y1="388" x2="870" y2="388" stroke="#37474F" stroke-width="2" marker-end="url(#arr)"/>
+    <circle cx="815" cy="388" r="8" fill="#FFEBEE" stroke="#C62828" stroke-width="1"/>
+    <text x="815" y="392" text-anchor="middle" fill="#C62828" font-size="8" font-weight="bold">2</text>
+
+    <!-- ── ID FAN ── -->
+    <g transform="translate(910,388)">
+      <rect x="-26" y="-26" width="52" height="52" rx="4" fill="#ECEFF1" stroke="#37474F" stroke-width="1.6"/>
+      <circle cx="0" cy="0" r="18" fill="none" stroke="#37474F" stroke-width="1.2"/>
+      <line x1="0" y1="-18" x2="0" y2="18" stroke="#37474F" stroke-width="0.9"/>
+      <line x1="-18" y1="0" x2="18" y2="0" stroke="#37474F" stroke-width="0.9"/>
+      <line x1="-13" y1="-13" x2="13" y2="13" stroke="#37474F" stroke-width="0.7"/>
+      <line x1="13" y1="-13" x2="-13" y2="13" stroke="#37474F" stroke-width="0.7"/>
+      <text x="0" y="38" text-anchor="middle" font-weight="bold" fill="#263238" font-size="8">ID FAN</text>
+      <text x="0" y="48" text-anchor="middle" fill="#546E7A" font-size="6">47 Hz | 902 RPM</text>
+      <text x="0" y="57" text-anchor="middle" fill="#C62828" font-size="6" font-weight="bold">Actual: ~23,000 m&#179;/h</text>
+      <text x="0" y="66" text-anchor="middle" fill="#78909C" font-size="5.5">(26% of rated 89,097)</text>
+
+      <!-- Stack -->
+      <rect x="-7" y="-56" width="14" height="30" fill="#CFD8DC" stroke="#607D8B" stroke-width="1"/>
+      <text x="0" y="-62" text-anchor="middle" fill="#607D8B" font-size="7" font-weight="bold">STACK</text>
+      <line x1="0" y1="-66" x2="0" y2="-76" stroke="#607D8B" stroke-width="1.2" marker-end="url(#arr)"/>
+
+      <!-- Vacuum -->
+      <rect x="-34" y="-42" width="68" height="12" rx="3" fill="#E3F2FD" stroke="#1565C0" stroke-width="0.7"/>
+      <text x="0" y="-33" text-anchor="middle" fill="#1565C0" font-size="6.5" font-weight="bold">&#8722;70 mm WG</text>
+    </g>
+
+
+    <!-- ════════════════════════════════════════════════════════ -->
+    <!--                      GROUND LEVEL                       -->
+    <!-- ════════════════════════════════════════════════════════ -->
+    <line x1="28" y1="470" x2="960" y2="470" stroke="#BCAAA4" stroke-width="0.7" stroke-dasharray="5,3"/>
+    <text x="32" y="480" fill="#BCAAA4" font-size="6">GROUND LEVEL</text>
+
+
+    <!-- ════════════════════════════════════════════════════════ -->
+    <!--                    SUMMARY PANELS                       -->
+    <!-- ════════════════════════════════════════════════════════ -->
+
+    <!-- Panel 1: Pressure Loss Budget -->
+    <g transform="translate(28,510)">
+      <rect width="310" height="74" rx="4" fill="#FFFFFF" stroke="#C62828" stroke-width="1"/>
+      <rect width="310" height="16" rx="4" fill="#C62828"/>
+      <rect y="8" width="310" height="8" fill="#C62828"/>
+      <text x="130" y="12" text-anchor="middle" fill="#FFFFFF" font-size="7.5" font-weight="bold">PRESSURE LOSS BUDGET (ID Fan ~190 mm WG)</text>
+      <text x="10" y="30" fill="#263238" font-size="6.5">Inlet 600 mm Z-duct (Cyclone &#8594; BF):</text>
+      <text x="248" y="30" text-anchor="end" fill="#C62828" font-size="6.5" font-weight="bold">&#8722;90 mm WG (47%)</text>
+      <text x="10" y="42" fill="#263238" font-size="6.5">Outlet 600 mm U-duct (BF &#8594; ID Fan):</text>
+      <text x="248" y="42" text-anchor="end" fill="#C62828" font-size="6.5" font-weight="bold">&#8722;80 mm WG (42%)</text>
+      <text x="10" y="54" fill="#263238" font-size="6.5">Bag filter &#916;P:</text>
+      <text x="248" y="54" text-anchor="end" fill="#2E7D32" font-size="6.5" font-weight="bold">&#8722;20 mm WG (11%)</text>
+      <line x1="10" y1="58" x2="254" y2="58" stroke="#CFD8DC" stroke-width="0.4"/>
+      <text x="10" y="68" fill="#263238" font-size="6.5" font-weight="bold">Furnace draft remaining:</text>
+      <text x="248" y="68" text-anchor="end" fill="#C62828" font-size="8.5" font-weight="bold">&#8776; 0 mm</text>
+      <text x="272" y="40" fill="#C62828" font-size="15" font-weight="bold">85%</text>
+      <text x="272" y="52" fill="#C62828" font-size="5.5">wasted on</text>
+      <text x="272" y="60" fill="#C62828" font-size="5.5">duct friction</text>
+    </g>
+
+    <!-- Panel 2: Mass Flow Imbalance -->
+    <g transform="translate(370,510)">
+      <rect width="290" height="74" rx="4" fill="#FFFFFF" stroke="#37474F" stroke-width="1"/>
+      <rect width="290" height="16" rx="4" fill="#37474F"/>
+      <rect y="8" width="290" height="8" fill="#37474F"/>
+      <text x="145" y="12" text-anchor="middle" fill="#FFFFFF" font-size="7.5" font-weight="bold">MASS FLOW IMBALANCE</text>
+      <text x="10" y="30" fill="#263238" font-size="6.5">Gas generated at BF stage:</text>
+      <text x="240" y="30" text-anchor="end" fill="#263238" font-size="6.5" font-weight="bold">~27,000 m&#179;/h</text>
+      <text x="10" y="42" fill="#C62828" font-size="6.5">600 mm duct max throughput:</text>
+      <text x="240" y="42" text-anchor="end" fill="#C62828" font-size="6.5" font-weight="bold">~23,000 m&#179;/h</text>
+      <line x1="10" y1="47" x2="246" y2="47" stroke="#263238" stroke-width="0.4"/>
+      <text x="10" y="58" fill="#C62828" font-size="6.5" font-weight="bold">Deficit (backs up to furnace):</text>
+      <text x="240" y="58" text-anchor="end" fill="#C62828" font-size="8.5" font-weight="bold">~4,000 m&#179;/h</text>
+      <text x="145" y="69" text-anchor="middle" fill="#C62828" font-size="5.5">Excess gas &#8594; pressure buildup &#8594; cyclic backfire every 2–3 min</text>
+    </g>
+
+    <!-- Panel 3: Projected Fix -->
+    <g transform="translate(690,510)">
+      <rect width="342" height="74" rx="4" fill="#FFFFFF" stroke="#2E7D32" stroke-width="1"/>
+      <rect width="342" height="16" rx="4" fill="#2E7D32"/>
+      <rect y="8" width="342" height="8" fill="#2E7D32"/>
+      <text x="182" y="12" text-anchor="middle" fill="#FFFFFF" font-size="7.5" font-weight="bold">PROJECTED AFTER DUCT ENLARGEMENT</text>
+      <text x="10" y="30" fill="#263238" font-size="6.5">Duct size: 1,000–1,200 mm dia</text>
+      <text x="304" y="30" text-anchor="end" fill="#2E7D32" font-size="6.5" font-weight="bold">Vel: 6.6–9.6 m/s</text>
+      <text x="10" y="42" fill="#263238" font-size="6.5">Total duct pressure loss:</text>
+      <text x="304" y="42" text-anchor="end" fill="#2E7D32" font-size="6.5" font-weight="bold">~28 mm WG (vs 170 current)</text>
+      <text x="10" y="54" fill="#263238" font-size="6.5">Available furnace draft:</text>
+      <text x="304" y="54" text-anchor="end" fill="#2E7D32" font-size="6.5" font-weight="bold">~62 mm WG (stable)</text>
+      <text x="10" y="66" fill="#263238" font-size="6.5" font-weight="bold">Result:</text>
+      <text x="304" y="66" text-anchor="end" fill="#2E7D32" font-size="8.5" font-weight="bold">BACKFIRE ELIMINATED</text>
+    </g>
+
+
+    <!-- ════════════════════════════════════════════════════════ -->
+    <!--                       FOOTNOTES                         -->
+    <!-- ════════════════════════════════════════════════════════ -->
+    <text x="28" y="620" fill="#78909C" font-size="8" font-style="italic">* Diagram is representational and not to scale. Circled numbers reference duct detail views above.</text>
+    <text x="1032" y="620" text-anchor="end" fill="#546E7A" font-size="8">LIRN Solutions | April 2026</text>
+
+    <!-- Reference note -->
+    <text x="530" y="655" text-anchor="middle" fill="#546E7A" font-size="8" font-style="italic">For full specifications, see the companion System Reference Document.</text>
+
+  </g>
+</svg>
