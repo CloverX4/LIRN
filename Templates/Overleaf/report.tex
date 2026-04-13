@@ -1,0 +1,102 @@
+% ============================================================================
+% LIRN Report Template
+% ============================================================================
+% Use for: RCA Reports, System References, Audit Reports, etc.
+% Compile with XeLaTeX
+% ============================================================================
+
+\documentclass[report]{lirn}
+
+% --- Document metadata ------------------------------------------------------
+\preparedfor{Client Name}
+\docdate{13 April 2026}
+\subject{Subject of the Report}
+\process{Process Description (Equipment Type, Capacity)}
+
+\begin{document}
+
+% === COVER PAGE =============================================================
+\lirnheader
+\lirntitle{Root Cause Analysis Report}  % or: System Reference Document, etc.
+\lirnmeta
+\lirnsubject
+\lirnprocess
+
+% --- Reference note (optional, for companion docs) -------------------------
+\lirnrefnote{REFERENCE DOCUMENT}{%
+  All equipment specifications, gas volume calculations, and duct sizing data
+  referenced in this report are detailed in the companion:
+  \textbf{\color{LirnBlue}LIRN - System Reference - Client Name}.%
+}
+
+% --- Table of Contents ------------------------------------------------------
+\vspace{8pt}
+{\large\bfseries\color{LirnText}Contents}
+\vspace{4pt}
+
+\begin{tabularx}{\textwidth}{@{} >{\color{LirnBlue}\bfseries}l X @{}}
+  1 & Executive Summary \\
+  2 & System Layout \\
+  3 & Problem Statement \\
+  4 & Root Cause Analysis \\
+  & \quad{\color{LirnLight}4.1\quad Primary Finding} \\
+  & \quad{\color{LirnLight}4.2\quad Secondary Finding} \\
+  5 & Before \& After --- Corrective Action Impact \\
+  6 & Recommendations \\
+  \midrule
+  {\color{LirnLight}A} & {\color{LirnMuted}Appendix --- Supporting Data} \\
+\end{tabularx}
+
+% === BODY ===================================================================
+\newpage
+
+\section{Executive Summary}
+
+% Your executive summary here.
+
+\section{System Layout}
+
+% Embed diagram:
+% \begin{center}
+%   \includegraphics[width=\textwidth]{diagram.pdf}
+% \end{center}
+
+\section{Problem Statement}
+
+% Describe the observed issues.
+
+\section{Root Cause Analysis}
+
+\subsection{Primary --- Title of Primary Finding}
+
+% Primary root cause analysis.
+
+\subsection{Secondary --- Title of Secondary Finding}
+
+% Secondary root cause analysis.
+
+\section{Before \& After --- Corrective Action Impact}
+
+% Before/after comparison table or description.
+
+\section{Recommendations}
+
+\begin{enumerate}
+  \item First recommendation.
+  \item Second recommendation.
+  \item Third recommendation.
+\end{enumerate}
+
+% === APPENDIX ===============================================================
+\newpage
+\appendix
+\section{Supporting Data}
+
+% Appendix content, tables, calculations, etc.
+
+% === END ====================================================================
+\lirnend[Report]
+
+\lirndisclaimers
+
+\end{document}

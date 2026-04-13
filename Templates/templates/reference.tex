@@ -1,0 +1,88 @@
+% ============================================================================
+% LIRN System Reference Document Template
+% ============================================================================
+% Use for: Equipment specs, calculations, data books
+% Compile with XeLaTeX
+% ============================================================================
+
+\documentclass[report]{lirn}
+
+% --- Document metadata ------------------------------------------------------
+\preparedfor{Client Name}
+\docdate{13 April 2026}
+\process{Process Description (Equipment Type, Capacity)}
+
+\begin{document}
+
+% === COVER PAGE =============================================================
+\lirnheader
+\lirntitle{System Reference Document}
+\lirnmeta
+\lirnprocess
+
+% --- Purpose note -----------------------------------------------------------
+\lirnrefnote{}{%
+  Equipment specs, gas volumes, duct sizing, and pressure loss calculations
+  for the system under review.%
+}
+
+% --- Table of Contents ------------------------------------------------------
+\vspace{8pt}
+{\large\bfseries\color{LirnText}Contents}
+\vspace{4pt}
+
+\begin{tabularx}{\textwidth}{@{} >{\color{LirnBlue}\bfseries}l X @{}}
+  1 & Process Overview \\
+  2 & Equipment Specifications \\
+  3 & Gas Volume Calculations \\
+  4 & Duct Sizing \& Layout \\
+  5 & Pressure Loss Budget \\
+  6 & Summary \& Observations \\
+  7 & References \\
+\end{tabularx}
+
+% === BODY ===================================================================
+\newpage
+
+\section{Process Overview}
+
+% Overview of the industrial process.
+
+\section{Equipment Specifications}
+
+% Equipment specs table:
+% \begin{tabularx}{\textwidth}{@{} l X @{}}
+%   \toprule
+%   \textbf{Parameter} & \textbf{Value} \\
+%   \midrule
+%   Type & ... \\
+%   Capacity & ... \\
+%   \bottomrule
+% \end{tabularx}
+
+\section{Gas Volume Calculations}
+
+% Gas volume data at each process stage.
+
+\section{Duct Sizing \& Layout}
+
+% Duct dimensions, lengths, bends, reducers.
+
+\section{Pressure Loss Budget}
+
+% Pressure loss breakdown table.
+
+\section{Summary \& Observations}
+
+% Key findings from the data.
+
+\section{References}
+
+% List of reference documents, standards, etc.
+
+% === END ====================================================================
+\lirnend[Document]
+
+\lirndisclaimers
+
+\end{document}

@@ -1,0 +1,52 @@
+% ============================================================================
+% Minimal example — shows how to cherry-pick LIRN components
+% ============================================================================
+% You don't have to use everything. Mix and match.
+% ============================================================================
+
+\documentclass[report]{lirn}
+
+\preparedfor{Any Client}
+\docdate{13 April 2026}
+
+\begin{document}
+
+% --- Just the header --------------------------------------------------------
+\lirnheader
+
+% --- Just a title -----------------------------------------------------------
+\lirntitle{Quick Technical Note}
+
+% --- Just the meta line -----------------------------------------------------
+\lirnmeta
+
+% --- Write anything ---------------------------------------------------------
+\section{Observation}
+
+This is a minimal document using LIRN branding. You can inject any component
+independently:
+
+\begin{itemize}
+  \item \texttt{\textbackslash lirnheader} --- the branded banner
+  \item \texttt{\textbackslash lirntitle\{...\}} --- styled document title
+  \item \texttt{\textbackslash lirnmeta} --- Prepared for / Date line
+  \item \texttt{\textbackslash lirnsubject} --- Subject line
+  \item \texttt{\textbackslash lirnprocess} --- Process line
+  \item \texttt{\textbackslash lirnrefnote\{Label\}\{Content\}} --- callout box
+  \item \texttt{\textbackslash lirnrule} --- horizontal divider
+  \item \texttt{\textbackslash lirnend[Report]} --- end-of-document marker
+  \item \texttt{\textbackslash lirndisclaimers} --- default disclaimers
+  \item \texttt{\textbackslash lirndisclaimers[...]} --- custom disclaimer items
+\end{itemize}
+
+% --- A callout anywhere -----------------------------------------------------
+\lirnrefnote{NOTE}{%
+  You can drop a callout box anywhere in any document.
+  Just call \texttt{\textbackslash lirnrefnote} with a label and content.%
+}
+
+% --- End marker + disclaimers anywhere --------------------------------------
+\lirnend[Note]
+\lirndisclaimers
+
+\end{document}

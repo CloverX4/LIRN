@@ -1,0 +1,91 @@
+% ============================================================================
+% LIRN Invoice Template
+% ============================================================================
+% Copy this file, fill in your details, compile with XeLaTeX
+% Requires: lirn.cls in the same directory (or TEXINPUTS path)
+% ============================================================================
+
+\documentclass[invoice]{lirn}
+
+% --- Document metadata ------------------------------------------------------
+\invoiceno{LIRN/2026-27/001}
+\docdate{13 April 2026}
+
+\begin{document}
+
+% --- Header -----------------------------------------------------------------
+\lirnheader
+\lirntitle{Tax Invoice}
+\lirninvoicemeta
+
+\lirnrule
+
+% --- Parties ----------------------------------------------------------------
+\lirninvoiceparties
+  {%  FROM
+    LIRN Solutions\\
+    Hyderabad\\
+    Telangana -- 500070\\
+    PAN: CSXPN2702F
+  }
+  {%  BILL TO
+    Bajaj Earths Pvt Ltd\\
+    Humnabad\\
+    Karnataka -- 585330
+  }
+
+\lirnrule
+
+% --- Scope of Work ----------------------------------------------------------
+{\large\bfseries\color{LirnDark}Scope of Work}
+\vspace{4pt}
+
+\begin{lirnscope}
+  \scopeitem{1}
+    {\textbf{Root Cause Analysis} --- {\small\color{LirnMuted}Furnace backfire \& stack emission diagnosis, data collection, system review}}
+    {12,500.00}
+  \scopeitem{2}
+    {\textbf{Pressure Loss Budget \& Gas Volume Calculations} --- {\small\color{LirnMuted}System pressure drop, gas volumes, duct sizing}}
+    {9,800.00}
+  \scopeitem{3}
+    {\textbf{Corrective Recommendations \& Action Plan} --- {\small\color{LirnMuted}Duct resizing specs, improvement measures, implementation roadmap}}
+    {10,500.00}
+  \scopeitem{4}
+    {\textbf{System Reference Document} --- {\small\color{LirnMuted}Equipment specs, calculations, pressure loss data}}
+    {6,500.00}
+  \scopeitem{5}
+    {\textbf{Process Flow Diagram} --- {\small\color{LirnMuted}System layout with duct-detail callouts and pressure annotations}}
+    {5,300.00}
+  \scopetotal{\rupee\,44,600.00}
+\end{lirnscope}
+
+\lirngst
+
+\lirnrule
+
+% --- Amount in words --------------------------------------------------------
+\lirnamountwords{Indian Rupees Forty-Four Thousand Six Hundred Only}
+
+\lirnrule
+
+% --- Deliverables -----------------------------------------------------------
+{\large\bfseries\color{LirnDark}Deliverables}
+\vspace{2pt}
+
+\begin{enumerate}[itemsep=1pt]
+  \item Root Cause Analysis Report --- Kiln Bag Filter System
+  \item System Reference Document --- Equipment Specifications \& Calculations
+  \item System Diagram --- Process Flow with Duct-Detail Callouts
+\end{enumerate}
+
+% --- Disclaimers ------------------------------------------------------------
+\vfill
+\lirndisclaimers[
+  \item This is a computer-generated invoice and does not require a physical signature.
+  \item Payment is requested within 30 days of invoice date.
+  \item All fees are for professional consulting services rendered. No guarantees are made regarding specific operational outcomes.
+  \item Information and recommendations are based on data available at the time of assessment and standard engineering practices.
+  \item For queries regarding this invoice, please contact LIRN Solutions.
+]
+
+\end{document}
