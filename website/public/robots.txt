@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# Allow all search engines
+Allow: /
+
+# Sitemap
+Sitemap: https://lirn.co.in/sitemap.xml
+
+# Crawl delay (optional, for respectful crawling)
+Crawl-delay: 1

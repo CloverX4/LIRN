@@ -22,7 +22,7 @@ export const products: Product[] = [
     cat: 'Separation',
     name: 'Cyclone Separators',
     spec: 'Single & multi-cyclone',
-    href: '/fabrications/cyclones',
+    href: '/fabrications/cyclones/cyclone-separator',
   },
   {
     cat: 'Material Handling',
@@ -52,19 +52,19 @@ export const products: Product[] = [
     cat: 'Structural',
     name: 'Trusses & Sheds',
     spec: 'Heavy industrial structures',
-    href: '/fabrications/trusses',
+    href: '/fabrications/trusses/industrial-shed-truss',
   },
   {
     cat: 'Gas Handling',
     name: 'Industrial Ducts',
     spec: 'Custom duct fabrication',
-    href: '/fabrications/dust-collection/industrial-ducts',
+    href: '/fabrications/gas-handling/industrial-ducts',
   },
   {
     cat: 'Storage',
     name: 'Storage Tanks',
     spec: 'Mild steel & SS',
-    href: '/fabrications/storage-tanks',
+    href: '/fabrications/storage-tanks/storage-tank',
   },
   {
     cat: 'Material Handling',

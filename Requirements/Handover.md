@@ -71,6 +71,26 @@ components/sections/ProductsGrid.tsx   ✓ (12 cards, 4-col → 2-col mobile)
 components/sections/CaseStudyTeaser.tsx ✓ (featured, anonymized notice)
 components/sections/CTABand.tsx        ✓ (cream bg, gold CTA, WhatsApp)
 
+lib/markdown.ts                        ✓ (custom markdown parser)
+data/services.ts                        ✓ (consulting services array)
+app/about/page.tsx                      ✓
+app/fabrications/page.tsx               ✓ (category listing)
+app/fabrications/[category]/page.tsx    ✓
+app/fabrications/[category]/[slug]/page.tsx ✓
+app/solutions/page.tsx                  ✓
+app/solutions/[slug]/page.tsx           ✓
+app/case-studies/page.tsx               ✓
+app/case-studies/[slug]/page.tsx        ✓
+app/clay-tech/page.tsx                  ✓ (coming soon + email capture)
+app/estimate/page.tsx                   ✓ (multi-step form)
+app/contact/page.tsx                    ✓
+app/api/contact/route.ts                ✓
+app/api/estimate/route.ts               ✓
+components/layout/WhatsAppFAB.tsx       ✓ (disabled)
+sitemap.xml                             ✓
+robots.txt                              ✓
+JSON-LD schemas                         ✓
+
 Homepage section order:
 Hero → DivisionGrid → ProductsGrid → CaseStudyTeaser → CTABand → Footer
 
@@ -89,12 +109,11 @@ Apply them as className on the relevant container divs:
   .footer-grid        → 4-col desktop → 2-col → 1-col mobile
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-KNOWN ISSUES / PENDING
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-1. WhatsAppFAB — skipped due to Windows PowerShell quote corruption
-   when writing TSX files. Build it directly in VS Code manually.
-   It's a fixed bottom-right green circle linking to wa.me/[number].
-   Add 'use client' at top, no template literals.
+KNOWN ISSUES / RESOLVED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. WhatsAppFAB — built and functional, currently disabled per user request.
+   Fixed bottom-right green circle linking to wa.me/[number].
+   'use client' at top, no template literals.
 
 2. WhatsApp number placeholder: 919999999999
    Update in lib/config.ts when real number is available.
@@ -103,57 +122,24 @@ KNOWN ISSUES / PENDING
    with gold Request Estimate button and green WhatsApp button.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-PAGES STILL TO BUILD
+PAGES BUILT
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-app/about/page.tsx
-app/fabrications/page.tsx
-app/fabrications/[category]/page.tsx
-app/fabrications/[category]/[slug]/page.tsx
-app/solutions/page.tsx
-app/solutions/[slug]/page.tsx
-app/case-studies/page.tsx
-app/case-studies/[slug]/page.tsx
-app/clay-tech/page.tsx
-app/estimate/page.tsx
-app/contact/page.tsx
-app/api/contact/route.ts
-app/api/estimate/route.ts
+All pages listed previously are now built and functional.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-DATA FILES STILL TO CREATE
+DATA FILES CREATED
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-data/services.ts — consulting services array
-Format should match data/products.ts pattern with TypeScript types.
-
-Services to include:
-- Root Cause Analysis
-- Pressure Loss Budget & Gas Volume Calculations
-- Duct Sizing & Corrective Action Planning
-- System Reference Documentation
-- Bleaching Earth Plant Consultancy
-- Baling Machine Consultancy
+All data files are created and functional.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-MDX CONTENT FILES TO WRITE
+MDX CONTENT FILES WRITTEN
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-content/products/thermal/rotary-kiln.mdx
-content/products/thermal/rotary-dryer.mdx
-content/products/dust-collection/bag-filter-house.mdx
-content/products/dust-collection/industrial-ducts.mdx
-content/products/cyclones/cyclone-separator.mdx
-content/products/conveyors/belt-conveyor.mdx
-content/products/conveyors/screw-conveyor.mdx
-content/products/conveyors/chain-conveyor.mdx
-content/products/conveyors/bucket-elevator.mdx
-content/products/crushers/hammer-crusher.mdx
-content/products/trusses/industrial-shed-truss.mdx
-content/products/storage-tanks/storage-tank.mdx
-content/services/root-cause-analysis.mdx
-content/services/pressure-loss-budget.mdx
-content/services/duct-sizing.mdx
-content/services/system-documentation.mdx
-content/services/bleaching-earth-consultancy.mdx
-content/case-studies/kiln-bag-filter-rca-karnataka.mdx
+All product, service, and case study MDX files are created and revamped:
+- Concise, action-oriented copy (not verbose)
+- Engineering specs prominently featured
+- Applications listed for context
+- Image placeholders and ASCII diagrams included
+- Character-efficient but information-rich (improves page performance)
 
 MDX frontmatter format to use:
 ---
@@ -211,23 +197,25 @@ WRITING STYLE FOR ALL COPY
 - Section headers in Georgia serif
 - No lorem ipsum anywhere
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 SUGGESTED NEXT STEPS IN ORDER
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-1. Create data/services.ts
-2. Build app/fabrications/page.tsx (category listing)
-3. Build app/fabrications/[category]/page.tsx
-4. Build app/fabrications/[category]/[slug]/page.tsx
-5. Write MDX content for 3-4 products to test the dynamic routing
-6. Build app/solutions/page.tsx + [slug]
-7. Build app/case-studies/page.tsx + [slug]
-8. Write the Bajaj Earths MDX case study
-9. Build app/about/page.tsx
-10. Build app/estimate/page.tsx (multi-step form)
-11. Build app/contact/page.tsx
-12. Build app/api/contact/route.ts + app/api/estimate/route.ts
-13. Build app/clay-tech/page.tsx (coming soon + email capture)
-14. Add WhatsAppFAB component
-15. sitemap.xml + robots.txt
-16. JSON-LD schemas per page
-17. Deploy to Vercel + point lirn.co.in DNS
+Phase 1 Complete: Content production, all pages, API routes, MDX framework done.
+
+Phase 2: International Credibility & Reach
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Client Testimonials — Add testimonials section with client quotes and logos on case studies and homepage
+2. Certifications & Accreditations — Display ISO 9001, safety certs, industry accreditations prominently
+3. Team Profiles — /team page with founder/engineer bios, credentials, specializations
+4. Company Timeline — Partnership milestones, project count, years of operation badges
+5. Professional Imagery — High-quality product photos, facility images, installation shots (currently using line figures)
+6. Trust Indicators — SSL badges, warranty details, secure payment info, confidentiality clause
+7. Legal Pages — Privacy policy, terms of service, GDPR/data protection compliance, cookie policy
+8. Contact Expansion — Phone callback requests, live chat widget, multiple contact methods beyond WhatsApp
+9. Multi-language Support — English + Hindi or regional languages for broader regional reach
+10. Advanced Analytics — Track form submissions, page views, user behavior for optimization
+11. Email Newsletter — Subscribe form and follow-up sequence for leads
+12. PDF Capabilities — Downloadable brochures, spec sheets, case study reports
+13. SEO Enhancements — Meta tags optimization, schema markup expansion, sitemap priority tuning
+14. Performance Optimization — Image optimization, lazy loading, Core Web Vitals tuning
+15. Social Media Integration — LinkedIn, YouTube embeds, testimonial wall
+16. Supabase Integration — Order management system for Clay Tech pre-launch

@@ -17,7 +17,7 @@ export type CaseStudyTeaser = {
 
 export const caseStudies: CaseStudyTeaser[] = [
     {
-        slug: 'kiln-bag-filter-rca-karnataka',
+        slug: 'kiln-bag-filter-rca',
         featured: true,
         anonymized: true,
         anonymizedNote: 'Client and project details anonymized. Technical findings shared for reference only.', tag: 'LIRN Solutions — Process Engineering',
@@ -32,7 +32,7 @@ export const caseStudies: CaseStudyTeaser[] = [
             'Cyclic furnace backfire every 2-3 minutes. Visible dust from the stack. Two 600 mm ducts consuming 85% of ID fan draft capacity.',
         fix:
             'Enlarge ducts to 1,000-1,200 mm. Switch to DP-triggered pulse cleaning. Reduce ID fan from 47 Hz to 25-32 Hz post-fix.',
-        href: '/case-studies/kiln-bag-filter-rca-karnataka',
+        href: '/case-studies/kiln-bag-filter-rca',
     },
 ]
 
