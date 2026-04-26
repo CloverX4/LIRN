@@ -84,7 +84,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
       </section>
 
       {/* Two-Column Layout */}
-      <div style={{ maxWidth: '1200px', margin: '0 auto', paddingLeft: '1.5rem', paddingRight: '1.5rem', display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '3rem' }}>
+      <div className="two-col-layout" style={{ maxWidth: '1200px', margin: '0 auto', paddingLeft: '1.5rem', paddingRight: '1.5rem', display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '3rem' }}>
         {/* Main Content */}
         <section><div dangerouslySetInnerHTML={{ __html: parseMarkdown(content) }} /></section>
 
@@ -111,6 +111,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
             <p style={{ fontSize: '13px', color: '#7aaa8a', marginBottom: '1rem' }}>Facing a similar challenge?</p>
             <a
               href="https://wa.me/919999999999?text=I%20have%20a%20similar%20process%20issue"
+              className="cta-btn"
               style={{
                 display: 'inline-block',
                 background: '#c4a96b',
@@ -131,14 +132,6 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
         </aside>
       </div>
 
-      {/* Mobile Stack */}
-      <style>{`
-        @media (max-width: 768px) {
-          .case-study-layout {
-            grid-template-columns: 1fr !important;
-          }
-        }
-      `}</style>
     </main>
   )
 }

@@ -20,6 +20,7 @@ export default function Footer() {
   return (
     <footer style={{ background: '#0d1f14' }}>
       <div
+        className="footer-grid"
         style={{
           maxWidth: '1200px',
           margin: '0 auto',
@@ -32,10 +33,10 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <div style={{ marginBottom: '0.75rem' }}>
-            <span style={{ fontFamily: 'Georgia, serif', fontSize: '20px', color: '#f7f2ea', letterSpacing: '0.04em' }}>
+            <span style={{ fontFamily: 'Georgia, serif', fontSize: '28px', color: '#f7f2ea', letterSpacing: '0.06em' }}>
               LIRN
             </span>
-            <span style={{ display: 'block', fontSize: '9px', fontWeight: 500, color: '#4a6a4a', letterSpacing: '0.2em', textTransform: 'uppercase', marginTop: '2px' }}>
+            <span style={{ display: 'block', fontSize: '9px', fontWeight: 500, color: '#4a6a4a', letterSpacing: '0.32em', textTransform: 'uppercase', marginTop: '2px' }}>
               Group
             </span>
           </div>
@@ -78,7 +79,7 @@ export default function Footer() {
           <div style={colHeadStyle}>Quick Links</div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
             <Link href="/case-studies" style={linkStyle}>Case Studies</Link>
-            <Link href="/estimate" style={linkStyle}>Request Estimate</Link>
+            <Link href="/estimate" style={linkStyle}>Request Callback</Link>
             <Link href="/about" style={linkStyle}>About</Link>
             <Link href="/contact" style={linkStyle}>Contact</Link>
           </div>

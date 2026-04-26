@@ -72,11 +72,101 @@
   .nav-cta-text {
     display: none !important;
   }
+  /* Two-column page layouts → single column on mobile */
+  .two-col-layout {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  /* Form field grids → single column on mobile */
+  .form-row {
+    grid-template-columns: 1fr !important;
+  }
+  /* About page approach grid */
+  .about-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ── CTA Button Animations ── */
+
+/* Ambient gold glow pulse */
+@keyframes goldPulse {
+  0%, 100% { box-shadow: 0 0 4px 1px rgba(196, 169, 107, 0.15); }
+  50% { box-shadow: 0 0 22px 6px rgba(196, 169, 107, 0.5); }
+}
+
+/* Ambient green glow pulse */
+@keyframes greenPulse {
+  0%, 100% { box-shadow: 0 0 4px 1px rgba(37, 162, 68, 0.15); }
+  50% { box-shadow: 0 0 22px 6px rgba(37, 162, 68, 0.45); }
+}
+
+/* Ambient dark glow pulse */
+@keyframes darkPulse {
+  0%, 100% { box-shadow: 0 0 4px 1px rgba(26, 51, 37, 0.1); }
+  50% { box-shadow: 0 0 18px 5px rgba(26, 51, 37, 0.35); }
+}
+
+.cta-btn {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  animation: goldPulse 3s ease-in-out infinite;
+}
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(196, 169, 107, 0.35);
+  animation: none;
+}
+.cta-btn:active {
+  transform: translateY(0);
+  animation: none;
+}
+
+.cta-btn-green {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  animation: greenPulse 3s ease-in-out infinite 0.5s;
+}
+.cta-btn-green:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(37, 162, 68, 0.35);
+  animation: none;
+}
+.cta-btn-green:active {
+  transform: translateY(0);
+  animation: none;
+}
+
+.cta-btn-dark {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  animation: darkPulse 3s ease-in-out infinite;
+}
+.cta-btn-dark:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(26, 51, 37, 0.25);
+  animation: none;
+}
+.cta-btn-dark:active {
+  transform: translateY(0);
+  animation: none;
+}
+
+/* Subtle link hover */
+.cta-link {
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.cta-link:hover {
+  color: #c4a96b !important;
+  border-color: #c4a96b !important;
 }
 
 @media (max-width: 480px) {
   .products-grid {
-    grid-template-columns: 1fr 1fr !important;
+    grid-template-columns: 1fr !important;
   }
   .footer-grid {
     grid-template-columns: 1fr !important;

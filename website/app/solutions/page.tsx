@@ -88,6 +88,7 @@ export default function SolutionsPage() {
           </p>
           <a
             href="https://wa.me/919999999999?text=I%20have%20a%20process%20engineering%20question"
+            className="cta-btn-green"
             style={{
               display: 'inline-block',
               background: '#25a244',

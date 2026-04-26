@@ -4,6 +4,7 @@ import matter from 'gray-matter'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { parseMarkdown } from '@/lib/markdown'
+import InquiryModal from '@/components/sections/InquiryModal'
 
 interface ProductFrontmatter {
   title: string
@@ -24,6 +25,8 @@ export default function ProductPage({ params }: { params: { category: string; sl
     crushers: 'crushers',
     trusses: 'trusses',
     'storage-tanks': 'storage-tanks',
+    'gas-handling': 'gas-handling',
+    mixing: 'mixing',
   }
 
   const catPath = categoryMap[params.category]
@@ -39,6 +42,14 @@ export default function ProductPage({ params }: { params: { category: string; sl
   const fileContent = fs.readFileSync(filePath, 'utf-8')
   const { data, content } = matter(fileContent)
   const frontmatter = data as ProductFrontmatter
+
+  // Strip [Product Image] placeholder from content
+  const cleanContent = content.replace(/\[Product Image[^\]]*\]/g, '').trim()
+
+  // Check if SVG image exists
+  const imagePath = `/images/products/${params.slug}.svg`
+  const imageFilePath = path.join(process.cwd(), 'public', 'images', 'products', `${params.slug}.svg`)
+  const hasImage = fs.existsSync(imageFilePath)
 
   return (
     <main style={{ background: '#f7f2ea', minHeight: '100vh', paddingTop: '6rem', paddingBottom: '4rem' }}>
@@ -70,10 +81,23 @@ export default function ProductPage({ params }: { params: { category: string; sl
         </div>
       </section>
 
+      {/* Product Image */}
+      {hasImage && (
+        <div style={{ maxWidth: '1200px', margin: '0 auto', paddingLeft: '1.5rem', paddingRight: '1.5rem', marginBottom: '3rem' }}>
+          <div style={{ background: '#eee8d8', borderRadius: '6px', padding: '1.5rem', border: '1px solid #c8bfa8' }}>
+            <img
+              src={imagePath}
+              alt={`${frontmatter.title} — technical schematic`}
+              style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'contain' }}
+            />
+          </div>
+        </div>
+      )}
+
       {/* Two-column layout */}
-      <div style={{ maxWidth: '1200px', margin: '0 auto', paddingLeft: '1.5rem', paddingRight: '1.5rem', display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '3rem' }}>
+      <div className="two-col-layout" style={{ maxWidth: '1200px', margin: '0 auto', paddingLeft: '1.5rem', paddingRight: '1.5rem', display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '3rem' }}>
         {/* Main Content */}
-        <section><div dangerouslySetInnerHTML={{ __html: parseMarkdown(content) }} /></section>
+        <section><div dangerouslySetInnerHTML={{ __html: parseMarkdown(cleanContent) }} /></section>
 
         {/* Sidebar */}
         <aside>
@@ -112,39 +136,40 @@ export default function ProductPage({ params }: { params: { category: string; sl
             </div>
           )}
 
-          {/* CTA */}
-          <div style={{ marginTop: '2rem', padding: '1.5rem', background: '#f7f2ea', border: '1px solid #c8bfa8', borderRadius: '4px', textAlign: 'center' }}>
-            <p style={{ fontSize: '13px', color: '#5a6e58', marginBottom: '1rem' }}>Need customized specifications?</p>
-            <a
-              href="https://wa.me/919999999999?text=I'm%20interested%20in%20learning%20more%20about%20your%20products."
-              style={{
-                display: 'inline-block',
-                background: '#25a244',
-                color: '#fff',
-                padding: '12px 24px',
-                borderRadius: '4px',
-                textDecoration: 'none',
-                fontFamily: 'JetBrains Mono, monospace',
-                fontSize: '11px',
-                fontWeight: '600',
-                letterSpacing: '0.08em',
-                textTransform: 'uppercase',
-              }}
+          {/* Inquiry CTA */}
+          <div style={{ marginTop: '2rem' }}>
+            <InquiryModal
+              equipment={frontmatter.title}
+              category={frontmatter.category}
+              specs={frontmatter.specs}
             >
-              Message on WhatsApp
-            </a>
+              <button
+                className="cta-btn"
+                style={{
+                  background: '#c4a96b',
+                  color: '#1a1a1a',
+                  padding: '14px',
+                  borderRadius: '4px',
+                  border: 'none',
+                  fontFamily: 'JetBrains Mono, monospace',
+                  fontSize: '11px',
+                  fontWeight: '600',
+                  letterSpacing: '0.08em',
+                  textTransform: 'uppercase',
+                  cursor: 'pointer',
+                  width: '100%',
+                }}
+              >
+                Send Inquiry
+              </button>
+            </InquiryModal>
+            <p style={{ fontSize: '11px', color: '#5a6e58', textAlign: 'center', lineHeight: 1.5, marginTop: '0.5rem' }}>
+              Get a quote with specs pre-filled
+            </p>
           </div>
         </aside>
       </div>
 
-      {/* Mobile Stack */}
-      <style>{`
-        @media (max-width: 768px) {
-          .product-layout {
-            grid-template-columns: 1fr !important;
-          }
-        }
-      `}</style>
     </main>
   )
 }

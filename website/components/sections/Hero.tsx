@@ -1,7 +1,8 @@
-﻿'use client'
+'use client'
 
 import Link from 'next/link'
 import { useEffect, useRef } from 'react'
+import InquiryModal from '@/components/sections/InquiryModal'
 
 export default function Hero() {
   const ref = useRef<HTMLDivElement>(null)
@@ -31,10 +32,12 @@ export default function Hero() {
             From rotary kilns and cyclone separators to full process plant consulting — LIRN Group fabricates, engineers, and delivers across the complete industrial spectrum.
           </p>
           <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap' }}>
-            <Link href="/estimate" style={{ background: '#c4a96b', color: '#1a1a1a', fontSize: '12px', fontWeight: 500, padding: '13px 26px', borderRadius: '2px', letterSpacing: '0.08em', textTransform: 'uppercase', textDecoration: 'none', display: 'inline-block' }}>
-              Request an Estimate
-            </Link>
-            <Link href="/case-studies" style={{ color: '#7aaa8a', fontSize: '14px', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px', borderBottom: '1px solid #3a6a4a', paddingBottom: '2px' }}>
+            <InquiryModal>
+              <span className="cta-btn" style={{ background: '#c4a96b', color: '#1a1a1a', fontSize: '12px', fontWeight: 500, padding: '13px 26px', borderRadius: '2px', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'inline-block' }}>
+                Send Inquiry
+              </span>
+            </InquiryModal>
+            <Link href="/case-studies" className="cta-link" style={{ color: '#7aaa8a', fontSize: '14px', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px', borderBottom: '1px solid #3a6a4a', paddingBottom: '2px' }}>
               View our work <span>→</span>
             </Link>
           </div>

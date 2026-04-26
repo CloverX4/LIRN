@@ -14,7 +14,7 @@ export default function ProductsGrid() {
         </div>
         <div style={{ width: '36px', height: '2px', background: '#c4a96b', marginBottom: '2rem' }} />
         <div className="products-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1px', background: '#c8bfa8', border: '1px solid #c8bfa8', borderRadius: '4px', overflow: 'hidden' }}>
-          {products.map((item) => (
+          {products.filter((item) => item.cat !== 'Mixing').map((item) => (
             <Link key={item.href} href={item.href} style={{ background: '#f7f2ea', padding: '1.25rem', textDecoration: 'none', display: 'block' }}>
               <div style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: '9px', color: '#8aab6e', letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: '6px', fontWeight: 500 }}>{item.cat}</div>
               <div style={{ fontSize: '14px', fontWeight: 500, color: '#1a3325', marginBottom: '4px', fontFamily: 'Georgia, serif' }}>{item.name}</div>

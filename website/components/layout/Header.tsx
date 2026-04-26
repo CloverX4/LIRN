@@ -1,7 +1,8 @@
-﻿'use client'
+'use client'
 
 import { useState } from 'react'
 import Link from 'next/link'
+import InquiryModal from '@/components/sections/InquiryModal'
 
 const fabricationCategories = [
   { name: 'Conveyors', href: '/fabrications/conveyors' },
@@ -11,6 +12,7 @@ const fabricationCategories = [
   { name: 'Crushers', href: '/fabrications/crushers' },
   { name: 'Trusses & Structures', href: '/fabrications/trusses' },
   { name: 'Storage Tanks', href: '/fabrications/storage-tanks' },
+  { name: 'Gas Handling', href: '/fabrications/gas-handling' },
 ]
 
 export default function Header() {
@@ -19,11 +21,11 @@ export default function Header() {
 
   return (
     <header style={{ background: '#f7f2ea', borderBottom: '1px solid #c8bfa8', position: 'sticky', top: 0, zIndex: 50 }}>
-      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem', height: '68px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <Link href="/" style={{ textDecoration: 'none', flexShrink: 0 }}>
-          <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1 }}>
-            <span style={{ fontFamily: 'Georgia, serif', fontSize: '20px', color: '#1a3325', letterSpacing: '0.04em' }}>LIRN</span>
-            <span style={{ fontSize: '8px', fontWeight: 500, color: '#5a6e58', letterSpacing: '0.2em', textTransform: 'uppercase', marginTop: '1px' }}>Group</span>
+          <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1, alignItems: 'flex-start' }}>
+            <span style={{ fontFamily: 'Georgia, serif', fontSize: '28px', color: '#1a3325', letterSpacing: '0.06em', fontWeight: 'normal' }}>LIRN</span>
+            <span style={{ fontSize: '9px', fontWeight: 500, color: '#5a6e58', letterSpacing: '0.32em', textTransform: 'uppercase', marginTop: '2px' }}>Group</span>
           </div>
         </Link>
 
@@ -48,10 +50,12 @@ export default function Header() {
         </nav>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-          <Link href="/estimate" style={{ background: '#1a3325', color: '#f7f2ea', fontSize: '11px', fontWeight: 500, padding: '9px 16px', borderRadius: '2px', letterSpacing: '0.08em', textTransform: 'uppercase', textDecoration: 'none', whiteSpace: 'nowrap' }}>
-            <span className="nav-cta-text">Request Estimate</span>
-            <span style={{ display: 'none' }} className="nav-cta-short">Estimate</span>
-          </Link>
+          <InquiryModal>
+            <span className="cta-btn-dark" style={{ background: '#1a3325', color: '#f7f2ea', fontSize: '11px', fontWeight: 500, padding: '9px 16px', borderRadius: '2px', letterSpacing: '0.08em', textTransform: 'uppercase', whiteSpace: 'nowrap', display: 'inline-block' }}>
+              <span className="nav-cta-text">Send Inquiry</span>
+              <span style={{ display: 'none' }} className="nav-cta-short">Inquiry</span>
+            </span>
+          </InquiryModal>
           <button onClick={() => setMobileOpen(!mobileOpen)} className="mobile-menu-btn" style={{ background: 'none', border: 'none', cursor: 'pointer', flexDirection: 'column', gap: '5px', padding: '4px' }} aria-label="Toggle menu">
             <span style={{ width: '22px', height: '1.5px', background: '#1a3325', display: 'block' }} />
             <span style={{ width: '22px', height: '1.5px', background: '#1a3325', display: 'block' }} />
@@ -69,7 +73,11 @@ export default function Header() {
           {[{ label: 'Solutions', href: '/solutions' }, { label: 'Case Studies', href: '/case-studies' }, { label: 'About', href: '/about' }, { label: 'Contact', href: '/contact' }].map((l) => (
             <Link key={l.href} href={l.href} style={{ display: 'block', padding: '10px 0', fontSize: '14px', color: '#1a3325', borderBottom: '1px solid #eee8d8', fontWeight: 500 }} onClick={() => setMobileOpen(false)}>{l.label}</Link>
           ))}
-          <Link href="/estimate" style={{ display: 'block', marginTop: '1rem', background: '#1a3325', color: '#f7f2ea', fontSize: '12px', fontWeight: 500, padding: '12px 20px', borderRadius: '2px', letterSpacing: '0.08em', textTransform: 'uppercase', textAlign: 'center' }} onClick={() => setMobileOpen(false)}>Request Estimate</Link>
+          <InquiryModal>
+            <div style={{ marginTop: '1rem', background: '#1a3325', color: '#f7f2ea', fontSize: '12px', fontWeight: 500, padding: '12px 20px', borderRadius: '2px', letterSpacing: '0.08em', textTransform: 'uppercase', textAlign: 'center', cursor: 'pointer' }}>
+              Send Inquiry
+            </div>
+          </InquiryModal>
         </div>
       )}
     </header>

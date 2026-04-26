@@ -77,7 +77,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Layout */}
-      <div style={{ maxWidth: '1200px', margin: '0 auto', paddingLeft: '1.5rem', paddingRight: '1.5rem', display: 'grid', gridTemplateColumns: '1.5fr 1fr', gap: '3rem' }}>
+      <div className="two-col-layout" style={{ maxWidth: '1200px', margin: '0 auto', paddingLeft: '1.5rem', paddingRight: '1.5rem', display: 'grid', gridTemplateColumns: '1.5fr 1fr', gap: '3rem' }}>
         {/* Form */}
         <section>
           {submitted ? (
@@ -232,6 +232,7 @@ export default function ContactPage() {
               <button
                 type="submit"
                 disabled={loading}
+                className="cta-btn"
                 style={{
                   background: '#c4a96b',
                   color: '#1a1a1a',
@@ -320,14 +321,6 @@ export default function ContactPage() {
         </aside>
       </div>
 
-      {/* Mobile Stack */}
-      <style>{`
-        @media (max-width: 768px) {
-          .contact-layout {
-            grid-template-columns: 1fr !important;
-          }
-        }
-      `}</style>
     </main>
   )
 }
