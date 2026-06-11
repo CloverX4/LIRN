@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" fill="#f7f2ea"/>
+  <!-- Labels -->
+  <text x="400" y="40" font-family="Georgia, serif" font-size="22" fill="#1a3325" text-anchor="middle" font-weight="bold">Rotary Kiln</text>
+  <text x="400" y="63" font-family="monospace" font-size="11" fill="#5a6e58" text-anchor="middle" letter-spacing="2">THERMAL PROCESSING</text>
+  <!-- Ground / base frame -->
+  <line x1="80" y1="340" x2="720" y2="340" stroke="#1a3325" stroke-width="2"/>
+  <!-- Support pier left -->
+  <rect x="155" y="280" width="50" height="60" stroke="#1a3325" stroke-width="2" fill="#eee8d8" rx="2"/>
+  <!-- Support pier right -->
+  <rect x="545" y="250" width="50" height="90" stroke="#1a3325" stroke-width="2" fill="#eee8d8" rx="2"/>
+  <!-- Support rollers left pair -->
+  <circle cx="168" cy="275" r="8" stroke="#1a3325" stroke-width="2" fill="#eee8d8"/>
+  <circle cx="192" cy="275" r="8" stroke="#1a3325" stroke-width="2" fill="#eee8d8"/>
+  <!-- Support rollers right pair -->
+  <circle cx="558" cy="245" r="8" stroke="#1a3325" stroke-width="2" fill="#eee8d8"/>
+  <circle cx="582" cy="245" r="8" stroke="#1a3325" stroke-width="2" fill="#eee8d8"/>
+  <!-- Kiln drum shell (inclined tube) -->
+  <line x1="120" y1="260" x2="640" y2="220" stroke="#1a3325" stroke-width="3"/>
+  <line x1="120" y1="290" x2="640" y2="250" stroke="#1a3325" stroke-width="3"/>
+  <!-- End caps -->
+  <ellipse cx="120" cy="275" rx="8" ry="16" stroke="#1a3325" stroke-width="2.5" fill="#eee8d8"/>
+  <ellipse cx="640" cy="235" rx="8" ry="16" stroke="#1a3325" stroke-width="2.5" fill="#eee8d8"/>
+  <!-- Tyre bands -->
+  <ellipse cx="200" cy="270" rx="4" ry="20" stroke="#c4a96b" stroke-width="2.5" fill="none"/>
+  <ellipse cx="400" cy="252" rx="4" ry="20" stroke="#c4a96b" stroke-width="2.5" fill="none"/>
+  <ellipse cx="570" cy="240" rx="4" ry="20" stroke="#c4a96b" stroke-width="2.5" fill="none"/>
+  <!-- Refractory lining (dashed inner) -->
+  <line x1="135" y1="265" x2="625" y2="225" stroke="#5a6e58" stroke-width="1" stroke-dasharray="6,4"/>
+  <line x1="135" y1="285" x2="625" y2="245" stroke="#5a6e58" stroke-width="1" stroke-dasharray="6,4"/>
+  <!-- Feed hopper (left) -->
+  <polygon points="80,230 115,260 115,290 80,270" stroke="#5a6e58" stroke-width="2" fill="none"/>
+  <text x="65" y="255" font-family="monospace" font-size="9" fill="#5a6e58" text-anchor="end">FEED</text>
+  <!-- Burner (right) -->
+  <rect x="650" y="222" width="40" height="26" stroke="#c4a96b" stroke-width="2" fill="none" rx="3"/>
+  <text x="670" y="260" font-family="monospace" font-size="8" fill="#c4a96b" text-anchor="middle">BURNER</text>
+  <!-- Flame indication -->
+  <line x1="650" y1="232" x2="620" y2="232" stroke="#c4a96b" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="650" y1="238" x2="610" y2="238" stroke="#c4a96b" stroke-width="1" stroke-dasharray="3,3" opacity="0.6"/>
+  <!-- Discharge -->
+  <path d="M640,250 L660,270 L680,270" stroke="#5a6e58" stroke-width="1.5" fill="none"/>
+  <text x="695" y="275" font-family="monospace" font-size="8" fill="#5a6e58">OUT</text>
+  <!-- Drive motor -->
+  <rect x="690" y="210" width="40" height="28" rx="3" stroke="#1a3325" stroke-width="2" fill="#eee8d8"/>
+  <text x="710" y="228" font-family="monospace" font-size="7" fill="#5a6e58" text-anchor="middle">DRIVE</text>
+  <!-- Rotation arrow -->
+  <path d="M310,210 A20,20 0 1,1 335,225" stroke="#c4a96b" stroke-width="1.5" fill="none" marker-end="url(#ak)"/>
+  <text x="330" y="205" font-family="monospace" font-size="9" fill="#c4a96b">4–12 RPM</text>
+  <!-- Dimension line -->
+  <line x1="120" y1="370" x2="640" y2="370" stroke="#5a6e58" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="120" y1="365" x2="120" y2="375" stroke="#5a6e58" stroke-width="1"/>
+  <line x1="640" y1="365" x2="640" y2="375" stroke="#5a6e58" stroke-width="1"/>
+  <text x="380" y="388" font-family="monospace" font-size="10" fill="#5a6e58" text-anchor="middle">15m – 45m</text>
+  <!-- Temp callout -->
+  <rect x="80" y="90" width="120" height="40" rx="4" stroke="#c4a96b" stroke-width="1.5" fill="none"/>
+  <text x="140" y="108" font-family="monospace" font-size="8" fill="#c4a96b" text-anchor="middle">MAX TEMPERATURE</text>
+  <text x="140" y="124" font-family="Georgia, serif" font-size="16" fill="#1a3325" text-anchor="middle" font-weight="bold">1200°C</text>
+  <defs>
+    <marker id="ak" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#c4a96b"/>
+    </marker>
+  </defs>
+</svg>

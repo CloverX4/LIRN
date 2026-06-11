@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#f7f2ea"/>
+  <!-- U-Trough -->
+  <path d="M130,200 L130,300 Q130,340 170,340 L630,340 Q670,340 670,300 L670,200" stroke="#1a3325" stroke-width="3" fill="none"/>
+  <!-- Trough cover (top) -->
+  <line x1="130" y1="200" x2="670" y2="200" stroke="#1a3325" stroke-width="2" stroke-dasharray="10,5"/>
+  <!-- Central shaft -->
+  <line x1="100" y1="270" x2="700" y2="270" stroke="#1a3325" stroke-width="3"/>
+  <!-- Helical flights (represented as ellipses) -->
+  <ellipse cx="180" cy="270" rx="10" ry="55" stroke="#c4a96b" stroke-width="2" fill="none"/>
+  <ellipse cx="230" cy="270" rx="10" ry="55" stroke="#c4a96b" stroke-width="2" fill="none"/>
+  <ellipse cx="280" cy="270" rx="10" ry="55" stroke="#c4a96b" stroke-width="2" fill="none"/>
+  <ellipse cx="330" cy="270" rx="10" ry="55" stroke="#c4a96b" stroke-width="2" fill="none"/>
+  <ellipse cx="380" cy="270" rx="10" ry="55" stroke="#c4a96b" stroke-width="2" fill="none"/>
+  <ellipse cx="430" cy="270" rx="10" ry="55" stroke="#c4a96b" stroke-width="2" fill="none"/>
+  <ellipse cx="480" cy="270" rx="10" ry="55" stroke="#c4a96b" stroke-width="2" fill="none"/>
+  <ellipse cx="530" cy="270" rx="10" ry="55" stroke="#c4a96b" stroke-width="2" fill="none"/>
+  <ellipse cx="580" cy="270" rx="10" ry="55" stroke="#c4a96b" stroke-width="2" fill="none"/>
+  <ellipse cx="630" cy="270" rx="10" ry="55" stroke="#c4a96b" stroke-width="2" fill="none"/>
+  <!-- Hanger bearing -->
+  <rect x="395" y="195" width="20" height="15" stroke="#5a6e58" stroke-width="1.5" fill="#eee8d8" rx="2"/>
+  <text x="405" y="190" font-family="monospace" font-size="7" fill="#5a6e58" text-anchor="middle">HANGER BRG</text>
+  <!-- Drive end -->
+  <rect x="700" y="245" width="55" height="50" rx="4" stroke="#1a3325" stroke-width="2" fill="#eee8d8"/>
+  <text x="727" y="274" font-family="monospace" font-size="8" fill="#5a6e58" text-anchor="middle">DRIVE</text>
+  <!-- Feed inlet -->
+  <rect x="150" y="155" width="60" height="45" stroke="#5a6e58" stroke-width="2" fill="none" rx="3"/>
+  <text x="180" y="182" font-family="monospace" font-size="8" fill="#5a6e58" text-anchor="middle">INLET</text>
+  <!-- Discharge outlet -->
+  <rect x="590" y="340" width="60" height="35" stroke="#1a3325" stroke-width="2" fill="#eee8d8" rx="3"/>
+  <text x="620" y="362" font-family="monospace" font-size="8" fill="#5a6e58" text-anchor="middle">OUTLET</text>
+  <!-- Material flow arrow -->
+  <path d="M200,310 L600,310" stroke="#c4a96b" stroke-width="1.5" marker-end="url(#arrowS)" opacity="0.6"/>
+  <!-- Support legs -->
+  <line x1="200" y1="340" x2="200" y2="400" stroke="#1a3325" stroke-width="2"/>
+  <line x1="400" y1="340" x2="400" y2="400" stroke="#1a3325" stroke-width="2"/>
+  <line x1="600" y1="375" x2="600" y2="400" stroke="#1a3325" stroke-width="2"/>
+  <line x1="150" y1="400" x2="650" y2="400" stroke="#1a3325" stroke-width="2"/>
+  <!-- Labels -->
+  <text x="400" y="50" font-family="Georgia, serif" font-size="22" fill="#1a3325" text-anchor="middle" font-weight="bold">Screw Conveyor</text>
+  <text x="400" y="75" font-family="monospace" font-size="11" fill="#5a6e58" text-anchor="middle" letter-spacing="2">ENCLOSED TRANSPORT</text>
+  <!-- Dimension -->
+  <line x1="130" y1="430" x2="670" y2="430" stroke="#5a6e58" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="130" y1="425" x2="130" y2="435" stroke="#5a6e58" stroke-width="1"/>
+  <line x1="670" y1="425" x2="670" y2="435" stroke="#5a6e58" stroke-width="1"/>
+  <text x="400" y="448" font-family="monospace" font-size="10" fill="#5a6e58" text-anchor="middle">Up to 20m</text>
+  <defs>
+    <marker id="arrowS" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#c4a96b"/>
+    </marker>
+  </defs>
+</svg>

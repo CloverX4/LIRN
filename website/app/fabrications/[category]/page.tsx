@@ -1,9 +1,21 @@
-'use client'
-
 import Link from 'next/link'
 import { products } from '@/data/products'
 import { notFound } from 'next/navigation'
 import InquiryModal from '@/components/sections/InquiryModal'
+
+export function generateStaticParams() {
+  return [
+    { category: 'thermal' },
+    { category: 'dust-collection' },
+    { category: 'cyclones' },
+    { category: 'conveyors' },
+    { category: 'crushers' },
+    { category: 'trusses' },
+    { category: 'storage-tanks' },
+    { category: 'gas-handling' },
+    { category: 'mixing' },
+  ]
+}
 
 // Map URL slugs back to category names
 const categorySlugMap: Record<string, string> = {

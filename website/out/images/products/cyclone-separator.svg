@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#f7f2ea"/>
+  <!-- Cyclone body - barrel -->
+  <rect x="300" y="120" width="200" height="140" rx="100" stroke="#1a3325" stroke-width="3" fill="none"/>
+  <!-- Cyclone cone -->
+  <polygon points="300,260 500,260 430,430 370,430" stroke="#1a3325" stroke-width="3" fill="none"/>
+  <!-- Vortex finder (inner tube) -->
+  <rect x="370" y="80" width="60" height="100" stroke="#1a3325" stroke-width="2" fill="#eee8d8" rx="2"/>
+  <text x="400" y="75" font-family="monospace" font-size="8" fill="#5a6e58" text-anchor="middle">CLEAN GAS OUT</text>
+  <!-- Tangential inlet -->
+  <rect x="180" y="140" width="120" height="40" stroke="#5a6e58" stroke-width="2" fill="none" rx="3"/>
+  <text x="240" y="164" font-family="monospace" font-size="8" fill="#5a6e58" text-anchor="middle">DIRTY GAS IN</text>
+  <path d="M300,160 L285,160" stroke="#5a6e58" stroke-width="1.5"/>
+  <!-- Vortex spiral -->
+  <path d="M380,180 Q340,200 380,230 Q420,260 380,280 Q350,300 380,320 Q400,340 390,360" stroke="#c4a96b" stroke-width="1.5" fill="none" stroke-dasharray="6,3"/>
+  <path d="M420,180 Q460,200 420,230 Q380,260 420,280 Q450,300 420,320 Q400,340 410,360" stroke="#c4a96b" stroke-width="1.5" fill="none" stroke-dasharray="6,3"/>
+  <!-- Dust outlet -->
+  <rect x="380" y="430" width="40" height="30" stroke="#1a3325" stroke-width="2" fill="#eee8d8" rx="2"/>
+  <text x="400" y="475" font-family="monospace" font-size="8" fill="#5a6e58" text-anchor="middle">DUST OUT</text>
+  <!-- Particle dots -->
+  <circle cx="320" cy="170" r="3" fill="#5a6e58" opacity="0.5"/>
+  <circle cx="340" cy="200" r="2.5" fill="#5a6e58" opacity="0.4"/>
+  <circle cx="360" cy="240" r="2" fill="#5a6e58" opacity="0.4"/>
+  <circle cx="380" cy="280" r="2.5" fill="#5a6e58" opacity="0.3"/>
+  <circle cx="390" cy="340" r="3" fill="#5a6e58" opacity="0.4"/>
+  <circle cx="460" cy="190" r="2" fill="#5a6e58" opacity="0.3"/>
+  <circle cx="450" cy="230" r="2.5" fill="#5a6e58" opacity="0.3"/>
+  <!-- Labels -->
+  <text x="400" y="35" font-family="Georgia, serif" font-size="22" fill="#1a3325" text-anchor="middle" font-weight="bold">Cyclone Separator</text>
+  <text x="400" y="58" font-family="monospace" font-size="11" fill="#5a6e58" text-anchor="middle" letter-spacing="2">CENTRIFUGAL SEPARATION</text>
+  <!-- Efficiency callout -->
+  <rect x="550" y="200" width="140" height="50" rx="4" stroke="#c4a96b" stroke-width="1.5" fill="none"/>
+  <text x="620" y="220" font-family="monospace" font-size="9" fill="#c4a96b" text-anchor="middle">EFFICIENCY</text>
+  <text x="620" y="238" font-family="Georgia, serif" font-size="16" fill="#1a3325" text-anchor="middle" font-weight="bold">95%+</text>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#f7f2ea"/>
+  <!-- Vertical tank -->
+  <!-- Tank shell -->
+  <rect x="160" y="120" width="180" height="260" stroke="#1a3325" stroke-width="3" fill="none" rx="4"/>
+  <!-- Cone bottom -->
+  <polygon points="160,380 250,430 340,380" stroke="#1a3325" stroke-width="3" fill="none"/>
+  <!-- Flat top -->
+  <ellipse cx="250" cy="120" rx="90" ry="20" stroke="#1a3325" stroke-width="3" fill="#eee8d8"/>
+  <!-- Manway on top -->
+  <rect x="230" y="100" width="40" height="20" stroke="#1a3325" stroke-width="2" fill="none" rx="3"/>
+  <text x="250" y="95" font-family="monospace" font-size="7" fill="#5a6e58" text-anchor="middle">MANWAY</text>
+  <!-- Level gauge -->
+  <rect x="345" y="150" width="10" height="200" stroke="#c4a96b" stroke-width="1.5" fill="none" rx="2"/>
+  <rect x="347" y="220" width="6" height="128" fill="#c4a96b" opacity="0.2" rx="1"/>
+  <text x="370" y="250" font-family="monospace" font-size="7" fill="#c4a96b">LEVEL</text>
+  <!-- Nozzles -->
+  <rect x="145" y="180" width="15" height="10" stroke="#5a6e58" stroke-width="1.5" fill="none" rx="1"/>
+  <rect x="145" y="280" width="15" height="10" stroke="#5a6e58" stroke-width="1.5" fill="none" rx="1"/>
+  <text x="135" y="188" font-family="monospace" font-size="6" fill="#5a6e58" text-anchor="end">INLET</text>
+  <text x="135" y="288" font-family="monospace" font-size="6" fill="#5a6e58" text-anchor="end">DRAIN</text>
+  <!-- Discharge valve at bottom -->
+  <rect x="237" y="430" width="26" height="18" stroke="#1a3325" stroke-width="2" fill="#eee8d8" rx="2"/>
+  <text x="250" y="462" font-family="monospace" font-size="7" fill="#5a6e58" text-anchor="middle">OUTLET</text>
+  <!-- Support legs -->
+  <line x1="185" y1="410" x2="185" y2="470" stroke="#1a3325" stroke-width="2.5"/>
+  <line x1="315" y1="410" x2="315" y2="470" stroke="#1a3325" stroke-width="2.5"/>
+  <line x1="160" y1="470" x2="340" y2="470" stroke="#1a3325" stroke-width="2"/>
+  <!-- Horizontal tank -->
+  <!-- Shell -->
+  <ellipse cx="580" cy="280" rx="50" ry="80" stroke="#1a3325" stroke-width="2" fill="none"/>
+  <rect x="480" y="200" width="200" height="160" stroke="#1a3325" stroke-width="3" fill="none" rx="0"/>
+  <ellipse cx="480" cy="280" rx="50" ry="80" stroke="#1a3325" stroke-width="3" fill="none"/>
+  <!-- Dish ends -->
+  <ellipse cx="680" cy="280" rx="25" ry="80" stroke="#1a3325" stroke-width="2.5" fill="none"/>
+  <!-- Saddle supports -->
+  <path d="M510,360 Q510,400 480,400 L540,400 Q510,400 510,360" stroke="#1a3325" stroke-width="2.5" fill="none"/>
+  <path d="M620,360 Q620,400 590,400 L650,400 Q620,400 620,360" stroke="#1a3325" stroke-width="2.5" fill="none"/>
+  <line x1="460" y1="400" x2="700" y2="400" stroke="#1a3325" stroke-width="2"/>
+  <!-- Manway -->
+  <rect x="540" y="195" width="30" height="10" stroke="#1a3325" stroke-width="1.5" fill="none" rx="2"/>
+  <!-- Nozzles -->
+  <rect x="490" y="350" width="10" height="12" stroke="#5a6e58" stroke-width="1.5" fill="none"/>
+  <rect x="630" y="350" width="10" height="12" stroke="#5a6e58" stroke-width="1.5" fill="none"/>
+  <!-- Type labels -->
+  <text x="250" y="490" font-family="monospace" font-size="10" fill="#1a3325" text-anchor="middle">VERTICAL</text>
+  <text x="580" y="435" font-family="monospace" font-size="10" fill="#1a3325" text-anchor="middle">HORIZONTAL</text>
+  <!-- Labels -->
+  <text x="400" y="40" font-family="Georgia, serif" font-size="22" fill="#1a3325" text-anchor="middle" font-weight="bold">Storage Tanks</text>
+  <text x="400" y="63" font-family="monospace" font-size="11" fill="#5a6e58" text-anchor="middle" letter-spacing="2">PROCESS STORAGE</text>
+  <!-- Capacity callout -->
+  <rect x="80" y="440" width="140" height="40" rx="4" stroke="#c4a96b" stroke-width="1.5" fill="none"/>
+  <text x="150" y="458" font-family="monospace" font-size="8" fill="#c4a96b" text-anchor="middle">CAPACITY</text>
+  <text x="150" y="473" font-family="Georgia, serif" font-size="12" fill="#1a3325" text-anchor="middle" font-weight="bold">100L – 100,000L+</text>
+</svg>
