@@ -6,6 +6,10 @@ import { notFound } from 'next/navigation'
 import { services } from '@/data/services'
 import { parseMarkdown } from '@/lib/markdown'
 
+export function generateStaticParams() {
+  return services.map((s) => ({ slug: s.slug }))
+}
+
 interface ServiceFrontmatter {
   title: string
   slug: string

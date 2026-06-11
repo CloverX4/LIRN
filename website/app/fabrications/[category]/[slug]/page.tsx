@@ -6,6 +6,24 @@ import { notFound } from 'next/navigation'
 import { parseMarkdown } from '@/lib/markdown'
 import InquiryModal from '@/components/sections/InquiryModal'
 
+export function generateStaticParams() {
+  return [
+    { category: 'thermal', slug: 'rotary-kiln' },
+    { category: 'thermal', slug: 'rotary-dryer' },
+    { category: 'dust-collection', slug: 'bag-filter-house' },
+    { category: 'cyclones', slug: 'cyclone-separator' },
+    { category: 'conveyors', slug: 'belt-conveyor' },
+    { category: 'conveyors', slug: 'bucket-elevator' },
+    { category: 'conveyors', slug: 'chain-conveyor' },
+    { category: 'conveyors', slug: 'screw-conveyor' },
+    { category: 'crushers', slug: 'hammer-crusher' },
+    { category: 'trusses', slug: 'industrial-shed-truss' },
+    { category: 'storage-tanks', slug: 'storage-tank' },
+    { category: 'gas-handling', slug: 'industrial-ducts' },
+    { category: 'mixing', slug: 'industrial-blender' },
+  ]
+}
+
 interface ProductFrontmatter {
   title: string
   category: string

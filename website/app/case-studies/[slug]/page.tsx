@@ -6,6 +6,10 @@ import { notFound } from 'next/navigation'
 import { caseStudies } from '@/data/case-studies'
 import { parseMarkdown } from '@/lib/markdown'
 
+export function generateStaticParams() {
+  return caseStudies.map((cs) => ({ slug: cs.slug }))
+}
+
 interface CaseStudyFrontmatter {
   title: string
   category: string
